@@ -1,6 +1,6 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   const city = event.queryStringParameters.city;
   const API_KEY = process.env.WEATHER_API_KEY;
 
@@ -27,4 +27,4 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ error: 'Something went wrong' }),
     };
   }
-};
+}
