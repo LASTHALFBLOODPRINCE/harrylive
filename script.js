@@ -8,7 +8,7 @@ const error = document.querySelector('.not-found')
 const cityHide = document.querySelector('.city-hide');
 r
 search.addEventListener('click', () => {
-    const APIkey = process.env.API_KEY; // Use your actual API key here
+   
     const city = document.querySelector('.search-box input').value;
 
     if (city == '')
